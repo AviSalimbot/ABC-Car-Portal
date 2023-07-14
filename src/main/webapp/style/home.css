@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "poppins";
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+#header{
+    height: 90px;
+}
+/*------------- Banner----------------*/
+/* .bottom-left{
+	text-align: center;
+}
+.bottom-left a{
+	font-size: 2rem;
+	font-family: 'Playfair Display', serif;
+}
+.insobutton{
+	padding-top:0.3rem;
+	padding-bottom:0.3rem;
+	padding-left:2rem;
+	padding-right:2rem;
+} */
+.banner{
+    height: 50%;
+}
+
+.banner img {
+    width: 100%;
+}
+.quote{
+    font-size: 2em;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    margin-bottom: 5%;
+}
+.text-box{
+    display: flex;
+    justify-content: center;
+    color: rgb(221, 221, 221);
+    text-align: center;
+    gap: 1rem;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #bf0909;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #25221e;
+    background-color: #25221e;
+    transition: 0.5s;
+}
+
+/*------------- ADVERTISEMENT ----------------*/
+
+.advertise{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 40px;
+}
+.adtext h1{
+    margin: 5%;
+    font-size: 2rem;
+    text-align: center;
+
+}
+.adtext p{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 1em;
+    text-align: justify;
+}
+.advertise img{
+    height: 200px;
+    border-radius: 5px;
+}
+
+/*------------- ATTAINMENT ----------------*/
+
+.rank{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.rank h3 {
+    font-size: 2rem;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 31%;
+    background: #fff;
+    box-shadow: 8px 10px 15px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 6%;
+    padding: 20px 12px;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.col h2{
+    text-align: center;
+    font-weight: 600;
+}
+.col h5{
+    margin-top: 0%;
+}
+
+.col p{
+    margin-top: 4pxS;
+    margin: 10px 0;
+    font-size: 13px;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*------------- ACHIEVEMENT ----------------*/
+
+.achievements{
+    background-color: #BF0909;
+    margin: auto;
+    width: 100%;
+}
+
+.achievements h1{
+    font-size: 2.8rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.achieve1{
+    color: #fff;
+    justify-content: space-between;
+    padding: 2rem 2rem 2rem 2rem ;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+    margin: 0 10%;
+}
+
+.achieve1-text{
+    margin: 10% 0; 
+    text-align: center;
+}
+
+.achieve1-text h2 {
+    margin-bottom: 3%;
+}
+
+.achieve1 img{
+    margin: auto;
+    height: 150px;
+    width: 280px;
+    border-radius: 5px;
+}
+.achieve2{
+    color: #fff;
+    justify-content: space-between;
+    padding: 0rem 2rem 2rem 2rem ;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+    margin: 0 10%;
+}
+.achieve2-text{
+    margin: 10% 0;
+    text-align: center; 
+}
+
+.achieve2 img{
+    margin: auto;
+    height: 150px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+
+.achieve3{
+    color: #fff;
+    justify-content: space-between;
+    padding: 0rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column-reverse;;
+    margin: 0 10%;
+}
+.achieve3-text{
+    margin: 10% 0; 
+    text-align: center;
+}
+.achieve3 img{
+    margin: auto;
+    height: 150px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+/*----- START OF GALLERY --------*/
+
+.gal-head h1{
+    font-size: 3.5em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+.gal-head p{
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+    width: 70%;
+}
+
+.big{
+    grid-column: span 2;
+    height: 250px;
+}
+
+.small{
+    height: 150px;
+}
+
+.portrait{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery{
+    display: grid;
+    transform: scale(0.38);
+    position: relative;
+    right: 30%;
+    gap: 1rem;
+}
+
+.pic1{
+    padding-left: 40px;
+    grid-column-end: 2;
+    height: 350px;
+    padding-top: 60px;
+}
+
+.pic3{
+    height: 250px;
+    padding-top: 100px;
+}
+
+.pic6{
+    grid-column: 5;
+    grid-row-start: 1;
+    height: 450px;
+    padding-top: 150px;
+}
+
+.gallery img{
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .logo {
+        grid-column: 1 / 2;
+    }
+
+    /* ======== NAVIGATION =========*/
+    nav {
+        all: unset;
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        justify-items: center;
+    }
+
+    nav li {
+        justify-content: center;
+        align-items: center;
+        margin: 0.5em 3em;
+        
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        
+        align-items: center;
+    }
+    
+    
+    /*============ START OF BANNER =================*/
+
+    .banner{
+        height: 50%;
+
+    }
+
+    /* Start of the CSS for main content Text */
+    .quote{
+        font-size: 5em;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        top: 400px;
+        left: 130px;
+    }
+    /* End of the CSS for main content Text */
+
+    /* Start of the CSS for hyperlinks */
+    .text-box{
+        width: 50%;
+        /* color: #fff; */
+        position: relative;
+        left: 70%;
+        transform: translate(-50%,-50%);
+        /* text-align: end; */
+        justify-content: space-between;
+        
+    }
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        /* border: 1px solid #bf0909; */
+        padding: 10px 30px;
+        font-size: 1em;
+        background-color: #bf0909;
+        /* position: relative; */
+        cursor: pointer;
+    }
+    .hero-btn:hover{
+        /* border: 1px solid #25221e; */
+        background-color: #25221e;
+        transition: 0.5s;
+    }
+    /* End of the CSS for hyperlinks */
+    
+    /*------------- ADVERTISEMENT ----------------*/
+    
+    .advertise{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .adtext h1{
+        width: 95%;
+        margin: 10px;
+        font-size: 3.5em;
+        text-align: left;
+    }
+    .adtext p{
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 1em;
+        width: 90%;
+    }
+    .advertise img{
+        height: 200px;
+        float: right;
+        position: relative;
+        top: 1rem;
+        border-radius: 5px;
+    }
+    
+    /*------------- ATTAINMENT ----------------*/
+    
+    .rank{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .col{
+        flex-basis: 31%;
+        background: #fff6f6;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    
+    }
+    .col h2{
+        text-align: center;
+        font-weight: 600;
+    }
+    .col h5{
+        margin-top: 0%;
+    }
+    .col p{
+        margin-top: 4pxS;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+    .col:hover{
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    /*------------- ACHIEVEMENT ----------------*/
+    
+    .achievements{
+        background-color: #BF0909;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .achievements h1{
+        font-size: 3.5em;
+        color: #fff;
+        text-align: center;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .achieve1{
+        width: 80%;margin: auto;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 80px 0 80px;
+        flex-direction: row;
+    }
+    .achieve1-text{
+        text-align: left;
+        margin: 20px;
+        margin-left: 70px;
+        width: 45%;
+    }
+    .achieve1 img{
+        margin: 0;
+        height: 11em;
+        position: relative;
+        right: 8%;
+        border-radius: 5px;
+    }
+    .achieve2{
+        width: 80%;
+        margin: auto;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 70px 0 100px;
+        flex-direction: row;
+    }
+    .achieve2-text{
+        text-align: left;
+        position: relative;
+        left: 5px;
+        width: 50%;
+        margin-left: 5rem;
+    }
+    .achieve2 img{
+        
+        height: 11em;
+        width: 300px 100%;
+        position: relative;
+        margin-top: 5rem;
+        margin-left: 5rem;
+        bottom: 15px;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+    
+    .achieve2-text p{
+        width: 420px;
+    }
+    
+    .achieve3{
+        width: 80%;margin: auto;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 80px 80px 80px;
+        flex-direction: row;
+    }
+    .achieve3-text{
+        text-align: left;
+        margin: 20px;
+        margin-left: 70px;
+        width: 45%;
+    }
+    .achieve3 img{
+        margin: 0;
+        height: 11em;
+        position: relative;
+        right: 8%;
+        border-radius: 5px;
+    }
+    
+    
+    /*----- START OF GALLERY --------*/
+    
+    .gal-head h1{
+        font-size: 3.5em;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+    }
+    .gal-head p{
+        margin: auto;
+        text-align: center;
+        font-size: 1em;
+        width: 70%;
+    }
+    
+    .big{
+        grid-column: span 2;
+        height: 250px;
+    }
+    
+    .small{
+        height: 150px;
+    }
+    
+    .portrait{
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .gallery{
+        position: static;
+        transform: none;
+        margin-top: 50px;
+        display: grid;
+        gap: 1rem;
+        padding-block: 1rem;
+        width: min(95%, 70rem);
+        margin-inline: auto;
+        margin-bottom: 80px;
+    }
+    
+    .pic1{
+        padding-left: 40px;
+        grid-column-end: 2;
+        height: 350px;
+        padding-top: 60px;
+    }
+    
+    .pic3{
+        height: 250px;
+        padding-top: 100px;
+    }
+    
+    .pic6{
+        grid-column: 5;
+        grid-row-start: 1;
+        height: 450px;
+        padding-top: 150px;
+    }
+    
+    .gallery img{
+        border-radius: 10px;
+    }
+    
+.containerz {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  top: 155px;
+  left: 25px;
+  font-size:70px;
+  font-family: 'Bebas Neue';
+  color:#222
+}
+
+.button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  width:65%;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  font-family: 'Bebas Neue';
+  font-size:32px;
+}
+.insobutton {
+  background-color: white;
+  color: black;
+  border: 1px solid #000;
+}
+
+.insobutton:hover {
+  background-color: #000;
+  color: white;
+}
+	
+
+ }
